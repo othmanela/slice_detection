@@ -1,9 +1,10 @@
 # Deep Reinforcement Learning for CT slice detection
 
-This repository contains the code for the paper: Deep Reinforcement Learning for L3 Slice Localization in Sarcopenia Assessment (arXiv:2107.12800v1)
+This repository contains the code for the paper: Deep Reinforcement Learning for L3 Slice Localization in Sarcopenia Assessment. 
+This work was published in [Machine Learning for Medical Imaging at MICCAI 2021.](https://link.springer.com/chapter/10.1007/978-3-030-87589-3_33) 
 
-A Deep Q-Network is trained to detect a single slice in a CT volume initially projected using MIP.
-The reinfocement learning agent has been applied to the task of localizing the L3 slice which corresponds to the computation of sarcopenia scores.
+In short, a Deep Q-Network (DQN) is trained to detect a single slice in a CT volume initially projected using a frontal maximum intensity projection (MIP).
+The reinforcement learning agent has been applied to the task of localizing the L3 slice which corresponds to the computation of sarcopenia scores.
 
 ## Visualization of the training process
 A complete video is provided in the folder `assets`
@@ -24,14 +25,20 @@ The agent is able to locate the L3 slice accurately.
 ## Citation 
 
 If you use this code, please cite our work
-
 ```
-@article{laousy2021deep,
-      title={Deep Reinforcement Learning for L3 Slice Localization in Sarcopenia Assessment}, 
-      author={Othmane Laousy and Guillaume Chassagnon and Edouard Oyallon and Nikos Paragios and Marie-Pierre Revel and Maria Vakalopoulou},
-      year={2021},
-      eprint={2107.12800},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG}
+@InProceedings{10.1007/978-3-030-87589-3_33,
+	author="Laousy, Othmane
+	and Chassagnon, Guillaume
+	and Oyallon, Edouard
+	and Paragios, Nikos
+	and Revel, Marie-Pierre
+	and Vakalopoulou, Maria",
+	title="Deep Reinforcement Learning for L3 Slice Localization in Sarcopenia Assessment",
+	booktitle="Machine Learning in Medical Imaging @ MICCAI 2021",
+	year="2021",
+	publisher="Springer International Publishing",
+	address="Cham",
+	pages="317--326",
+	isbn="978-3-030-87589-3"
 }
 ```
